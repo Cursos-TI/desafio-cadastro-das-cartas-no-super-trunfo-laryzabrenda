@@ -6,22 +6,30 @@ int main() {
    float area1, area2, pib1, pib2;
 
 
-printf("Vamos criar 2 cartas para um jogo Super Trunfo? \n\n"); //Interação com o usuário
+printf("Jogo Super Trunfo - Nível Novato \n\n"); 
+
+printf("Aluna: Laryza Brenda Oliveira de Sá Vieira. \n"); 
+printf("Matrícula: 202508030985. \n\n");
+
+//printf é utilizado para imprimir o que desejamos mostrar na tela
+//scanf é utilizado para ler o que o usuário escreve pelo teclado (padrão)
 
 printf("Digite o nome do estado da primeira carta: * Sem acentos ou espaços\n");
-scanf("%s", &estado1); 
+scanf("%s", &estado1); //Utilizei a variável "estado1" do tipo char pois o valor esperado é do tipo string.
 
 printf("Digite o nome de uma cidade do estado que escolheu: * Sem acentos ou espaços \n");
-scanf("%s", &cidade1); 
+scanf("%s", &cidade1); //%s é o especificador adequado para valores do tipo string.
 
 printf("Crie um código para esta carta, utilizando a letra escolhida para o estado mais um número com 2 dígitos, de 01 a 04:\n"); 
-scanf("%s", &codigo1); 
+scanf("%s", &codigo1); //O ponteiro "&" serve para armazenar o valor recebido em scanf na variável desejada.
 
 printf("Qual o número de habitantes dessa cidade? \n");
-scanf("%d", &populacao1); 
+scanf("%d", &populacao1); //%d é o especificador adequado para números inteiros.
+//Utilizei a variável "populacao1" do tipo int, pois o valor esperado é apenas de números inteiros.
 
 printf("Qual é a área total da cidade? * Com até 2 casas decimais \n");
-scanf("%f", &area1);
+scanf("%f", &area1); //%f é o especificador adequado para números com casas decimais.
+//Utilizei a variável "area1" do tipo float, pois o valor esperado é potencialmente de números decimais.
 
 printf("Qual o PIB dessa cidade? * Com até 2 casas decimais \n");
 scanf("%f", &pib1);
@@ -29,7 +37,7 @@ scanf("%f", &pib1);
 printf("Essa cidade possui quantos pontos turísticos? \n");
 scanf("%d", &pontos1);
 
-printf("\nAgora vamos criar a segunda carta: \n");
+printf("\nAgora vamos criar a segunda carta: \n"); //Utilizei o "/n" para pular linha no programa, deixando ele mais apresentável.
 
 printf("\n\nDigite o nome do estado da segunda carta: * Sem acentos ou espaços \n");
 scanf("%s", &estado2);
@@ -52,15 +60,15 @@ scanf("%f", &pib2);
 printf("Essa cidade possui quantos pontos turísticos? \n");
 scanf("%d", &pontos2);
 
-
+//A partir daqui, o programa mostrará as respostas inseridas pelo usuário através da função "scanf".
 
 printf("\n Carta 1:\n");
 printf("Estado: %s \n", estado1);
 printf("Código: %s \n", codigo1);
 printf("Cidade: %s \n", cidade1);
 printf("População: %d", populacao1); printf(" habitantes.\n");
-printf("Área: %.2f" , area1); printf(" km². \n");
-printf("PIB: %.2f" , pib1); printf(" bilhões de reais. \n");
+printf("Área: %.2f" , area1); printf(" km². \n"); //Foi utilizado o ".2" no especificador para limitar a quantidade de casas decimais.
+printf("PIB: %.2f" , pib1); printf(" bilhões de reais. \n"); 
 printf("Número de Pontos Turísticos: %d \n\n" , pontos1);
 
 
@@ -69,8 +77,8 @@ printf("Estado: %s\n", estado2);
 printf("Código: %s \n", codigo2);
 printf("Cidade: %s \n", cidade2);
 printf("População: %d", populacao2); printf(" habitantes.\n");
-printf("Área: %.2f" , area2); printf(" km². \n");
-printf("PIB: %.2f" , pib2); printf(" bilhões de reais. \n");
+printf("Área: %.2f" , area2); printf(" km². \n"); 
+printf("PIB: %.2f" , pib2); printf(" bilhões de reais. \n"); 
 printf("Número de Pontos Turísticos: %d \n" , pontos2);
 
 
